@@ -1,0 +1,39 @@
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  text-align: center;
+  border: none;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+}
+.tvaSection{
+    font-size: 48px;
+}
+
+.tvaDiv {
+  font-size: 52px;
+}
+
+.ticketMenu{
+    font-size: 59px;
+}
+
+#ticketBeforePrint hr {
+  border: 2px dashed #000000;
+  border-radius: 5px;
+}
+
+@media print {
+    body * {
+        visibility: hidden !important;
+
+    }
+    #ticketBeforePrint, #ticketBeforePrint *{
+        color: #000000;
+        visibility: visible !important;
+    }
+}
